@@ -597,7 +597,7 @@ impl ClusterConnection {
     }
 }
 
-trait MergeResults {
+pub trait MergeResults {
     fn merge_results(_values: HashMap<&str, Self>) -> Self
     where
         Self: Sized;
